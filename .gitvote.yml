@@ -1,0 +1,20 @@
+# Example file: https://github.com/cncf/gitvote/blob/main/docs/config/.gitvote.yml
+audit:
+  enabled: true
+profiles:
+  default:
+    duration: 13w
+    pass_threshold: 66
+    allowed_voters:
+      teams:
+        - cncf-toc-voters
+      exclude_team_maintainers: true
+    close_on_passing: true
+  sandbox:
+    duration: 2w
+    pass_threshold: 66
+    allowed_voters:
+      teams:
+        - cncf-toc-voters
+      exclude_team_maintainers: true
+    close_on_passing: true
